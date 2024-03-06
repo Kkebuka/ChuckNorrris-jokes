@@ -58,4 +58,11 @@ select{
     font-size: 1rem;
     font-weight: 500;
     margin: 20px 0px;
+    background-color: aqua;
+}
+.get-jokes {
+    width: 30%;
+    height: 23px;
+    font-weight: 600;
+    margin: auto;
 }

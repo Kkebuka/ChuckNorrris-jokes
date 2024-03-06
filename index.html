@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norris Joke</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chuck Norris Joke generator</h1>
+        <form action="#">
+            <div class="form-div">
+                <label for="myjoke">Select Category of Joke:</label>
+                <select name="myjoke" id="myjoke">
+                    <option value="animal">Animal</option>
+                    <option value="career">Career</option>
+                    <option value="celebrity">Celebrity</option>
+                    <option value="dev">Dev</option>
+                    <option value="explicit">Explicit</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="food">Food</option>
+                    <option value="history">History</option>
+                    <option value="money">Money</option>
+                    <option value="movie">Movie</option>
+                    <option value="music">Music</option>
+                    <option value="political">Political</option>
+                    <option value="religion">Religion</option>
+                    <option value="science">Science</option>
+                    <option value="sport">Sport</option>
+                    <option value="travel">Travel</option>
+                </select>
+            </div>
+            <button class="get-jokes">Get Jokes</button>
+        </form>
+        <ul class="jokes"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

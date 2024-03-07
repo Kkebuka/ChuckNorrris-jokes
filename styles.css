@@ -38,7 +38,6 @@ h1 {
 }
 form{
     width: 100%;
-    border: 2px solid red;
     display: flex;  
     flex-direction: column;
     margin: 20px 0px;
@@ -75,11 +74,14 @@ ul{
     color: rgb(194, 241, 124)
 }
 footer{
-    width: 98%;
+    width: 100%;
     position: absolute;
     left: auto;
     right: auto;
     bottom: 0;
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 10px 0px;
 }

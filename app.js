@@ -12,9 +12,10 @@ function getJokes(e){
     xhr.onload = function(){
         
         if(this.status === 200){
+            console.log(this.response)
             const response = JSON.parse(this.responseText);
-            console.log(response)
-   
+
+
             let output = '';
 
             output += `<li>THE JOKE : ${response.value} 😂🤣</li>` 

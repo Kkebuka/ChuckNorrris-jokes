@@ -7,7 +7,7 @@ function getJokes(e){
     console.log(category)
     const xhr = new XMLHttpRequest()
 
-    xhr.open('GET', `https://api.chucknorris.io/jokes/random?category=${category}`, true)
+    xhr.open('GET', `https://api.chucknorris.io/jokes/random?category=${category}1`, true)
     
     xhr.onload = function(){
         
@@ -19,6 +19,12 @@ function getJokes(e){
             let output = '';
 
             output += `<li>THE JOKE : ${response.value} 😂🤣</li>` 
+            document.querySelector('.jokes').innerHTML = output;
+        } else {
+            let errorMsg = `Error: ${this.status}` ;
+            console.log(errorMsg)
+            let output = '';
+            output += `<li> ${errorMsg} 🤦‍♂️</li>` ;
             document.querySelector('.jokes').innerHTML = output;
         }
     }

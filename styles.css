@@ -12,7 +12,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    overflow-y: hidden;
 }
 body::before{
     content: "";
@@ -26,10 +25,11 @@ body::before{
 }
 
 .container{
+    position: relative;
     width: 30%;
     min-width: 200px;
     /* height: 100vh;   */
-    margin: auto;
+    margin:50px auto;
     color: aliceblue;
 }
 h1 {

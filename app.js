@@ -7,7 +7,7 @@ function getJokes(e){
     console.log(category)
     const xhr = new XMLHttpRequest()
 
-    xhr.open('GET', `https://api.chucknorris.io/jokes/random?category=${category}1`, true)
+    xhr.open('GET', `https://api.chucknorris.io/jokes/random?category=${category}`, true)
     
     xhr.onload = function(){
         

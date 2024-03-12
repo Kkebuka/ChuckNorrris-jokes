@@ -4,15 +4,14 @@ function getJokes(e){
     // const number = document.querySelector('input[type="number"]').value;
     console.log('workiing ')
     let category = document.getElementById('myjoke').value
-    console.log(category)
+    
     const xhr = new XMLHttpRequest()
 
     xhr.open('GET', `https://api.chucknorris.io/jokes/random?category=${category}`, true)
-    
+    console.log(xhr.readyState)
     xhr.onload = function(){
-        
+        console.log(xhr.readyState)
         if(this.status === 200){
-            console.log(this.response)
             const response = JSON.parse(this.responseText);
 
 
@@ -27,6 +26,13 @@ function getJokes(e){
             output += `<li> ${errorMsg} 🤦‍♂️</li>` ;
             document.querySelector('.jokes').innerHTML = output;
         }
+    }
+    xhr.onerror = function () {
+        let errorMsg = `Error: No internet connection` ;
+        console.log(errorMsg)
+        let output = '';
+        output += `<li> ${errorMsg} 🤦‍♂️</li>` ;
+        document.querySelector('.jokes').innerHTML = output;
     }
     xhr.send();
     e.preventDefault()

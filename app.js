@@ -29,7 +29,6 @@ function getJokes(e){
     }
     xhr.onerror = function () {
         let errorMsg = `Error: No internet connections` ;
-        console.log(errorMsg)
         let output = '';
         output += `<li> ${errorMsg} 🤦‍♂️</li>` ;
         document.querySelector('.jokes').innerHTML = output;

@@ -2,82 +2,70 @@
     margin: 0px;
     padding: 0px;
 }
-html {
-    height: 100vh;
-}
-body {
-    width: 100%;
-    height: 100vh;
-    background-image: url(image1.jpg);
-    background-position: center;
+body{
+    min-height: 100vh;
+    background-image: url(image.jpg);
+    background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 0px;
-    
 }
-.dark {
+.dark{
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.267);
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.616)
+    /* border: 2px solid red; */
 }
-.container{
-    position: relative;
-    width: 30%;
-    min-width: 200px;
-    /* height: 100vh;   */
-    margin:50px auto;
-    color: aliceblue;
-}
-h1 {
-    text-align: center;
-    padding: 40px 0px;
-}
-form{
+.container {
     width: 100%;
-    display: flex;  
-    flex-direction: column;
-    margin: 20px 0px;
-}
-/* label{ */
-    /* text-align: center; */
-/* } */
-.form-div {
+    height: 500px;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
+    padding-top: 30px;
+}
+form{
+    /* margin-top: 3; */
+    /* border: 2px solid blue; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
-    
+    align-items: center;
+}
+ul {
+    margin: 0px 20%;
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+label {
+    font-size: 1.7rem;
+    font-family: 'Archer Italic 300', sans-serif;
+                                                
+}
 select{
-    width: 40%;
+    width: 170px;
+    font-size: 1.4rem;
+}
+button {
+    width: 100px;
     height: 25px;
+    cursor: pointer;
     font-size: 1rem;
-    font-weight: 500;
-    margin: 20px 0px;
     background-color: aqua;
 }
-.get-jokes {
-    width: 30%;
-    height: 23px;
+li{
+    color: rgb(53, 2, 2);
     font-weight: 600;
-    margin: auto;
-}
-.get-jokes:hover {
-    background-color: rgb(194, 241, 124);
-}
-ul{
-    color: rgb(194, 241, 124)
-}
-footer{
-    width: 100%;
-    position: relative;
-    left: auto;
-    right: auto;
-    bottom: 0;
-    text-align: center;
-    /* border: 2px solid red; */
-    color: aliceblue;
-    font-size: 1rem;
-    padding: 10px 0px;
 }

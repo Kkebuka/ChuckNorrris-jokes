@@ -40,17 +40,18 @@ form{
 }
 ul {
     margin: 0px 20%;
+    margin-bottom: 10px;
 }
 
 footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding-bottom: 20px;
-    font-weight: 600;
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* margin: 20px 0px; */
+    /* font-weight: 600; */
 }
 label {
     font-size: 1.7rem;
